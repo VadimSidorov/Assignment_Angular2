@@ -1,0 +1,7 @@
+<h1>Assignment4</h1>
+<app-game-control (firstevent)="something($event)"></app-game-control>
+<ul class = "list-group">
+    <app-odd *ngFor="let odd of odds; index as i">{{odds[i]}}</app-odd>
+    <app-even *ngFor="let even of evens; index as i">{{evens[i]}}</app-even>
+</ul>
+

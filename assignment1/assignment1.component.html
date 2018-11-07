@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-6">
+    <div class="btn btn-danger"  (click)="fun(event)">Display details</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <p [ngClass]="{invisible: visible}">Secret password is DOTA2</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4">
+      <p class="" 
+      *ngFor="let log of logs; index as i;" 
+      [ngStyle]="{backgroundColor:getColor(i)}" [ngClass]="{'text-primary':i>3}"
+      >{{logs[i]}}</p>
+  </div>
+</div>
+
+
+
+
